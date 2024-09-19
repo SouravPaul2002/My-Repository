@@ -1,0 +1,142 @@
+:root {
+    --white-shade: rgba(255, 255, 255, 255);
+    --background-first: rgba(222, 245, 242, 255);
+    --background-second: rgba(255, 244, 243, 255);
+    --secondary-text: rgba(25, 46, 98, 255);
+    --primary-text: rgba(45, 202, 127, 255);
+    --grey-shade-text: rgba(163,172,171,255);
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+}
+
+body {
+    padding-top: 80px;
+}
+
+/* navbar css starts*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white-shade);
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.nav-content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.nav-content .logo a {
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: var(--secondary-text);
+    cursor: pointer;
+}
+
+.nav-content .logo span {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--primary-text);
+}
+
+.nav-content .section,
+.login {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.nav-content .section a {
+    color: var(--secondary-text);
+    text-decoration: none;
+    padding: 0 1rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.nav-content .login a {
+    color: var(--white-shade);
+    text-decoration: none;
+    padding: 0.6rem 2rem;
+    font-weight: 500;
+    background-color: var(--primary-text);
+    border: 2px solid var(--primary-text);
+    border-radius: 2rem;
+    margin-right: 1rem;
+}
+
+.nav-content .login a:hover {
+    transition: 0.4s ease;
+    color: var(--primary-text);
+    background-color: var(--white-shade);
+    border: 2px solid var(--primary-text);
+}
+
+/* navbar css ends*/
+
+/* body css starts */
+.container {
+    height: 100vh;
+    /* max-height: 100%; */
+    /* background: linear-gradient(to right, var(--background-first), var(--background-second)); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    background: linear-gradient(to right, var(--background-first), var(--background-second));
+}
+.left-section{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    /* margin: 0rem 3rem; */
+}
+.left-section .main-text-container{
+    font-size: 5rem;
+    padding: 0rem 3rem;
+}
+.left-section .sub-text{
+    font-size: 1rem;
+    padding: 0rem 3rem;
+}
+/* texts css starts*/
+#bold-text{
+    color: var(--secondary-text);
+}
+#light-text{
+    color: var(--secondary-text);
+}
+#second-text{
+    color: var(--primary-text);
+}
+#final-text{
+    color: var(--secondary-text);
+}
+.sub-text{
+    color: var(--grey-shade-text);
+}
+/* texts css ends*/

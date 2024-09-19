@@ -50,6 +50,7 @@ nav .logo a {
   color: var(--primary-color);
   transition: 0.3s;
 }
+
 nav .logo a:hover {
   color: var(--primary-color-dark);
 }
@@ -61,6 +62,7 @@ nav .checkbox {
 nav input {
   display: none;
 }
+
 nav .checkbox i {
   font-size: 2rem;
   color: var(--primary-color);
@@ -117,6 +119,7 @@ ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 1rem;
 }
 
 .subtitle {
@@ -126,7 +129,7 @@ ul li a:hover {
   margin-bottom: 0.5rem;
 }
 
-.about-section{
+.about-section {
   text-align: center;
 }
 
@@ -172,7 +175,7 @@ ul li a:hover {
 
 .hire__me:hover {
   background-color: var(--extra-light);
-  color:var(--primary-color);
+  color: var(--primary-color);
 }
 
 .portfolio {
@@ -194,51 +197,55 @@ ul li a:hover {
   border-radius: 100%;
 }
 
-.about-section , .contact-section{
-  background-color:var(--extra-light-secondary) ;
+.about-section,
+.contact-section {
+  background-color: var(--extra-light-secondary);
 }
 
 .about-image {
   display: grid;
   place-items: center;
 }
-.about-image img{
+
+.about-image img {
   width: min(25rem, 90%);
   border-radius: 10px;
 }
 
-.contact-content{
+.contact-content {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.contact-right{
+
+.contact-right {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 370px;
   width: 100%;
   background: #fff;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 24px;
   padding: 25px;
   position: relative;
 }
-.contact-left{
+
+.contact-left {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 1.8rem;
 }
 
-.contact-left-title h2{
+.contact-left-title h2 {
   font-weight: 600;
   color: var(--text-light);
-  font-size:40px;
-  margin-bottom:5px;
+  font-size: 40px;
+  margin-bottom: 5px;
 }
 
-.contact-left-title hr{
+.contact-left-title hr {
   border: none;
   width: 120px;
   height: 5px;
@@ -247,7 +254,7 @@ ul li a:hover {
   margin-bottom: 20px;
 }
 
-.contact-inputs{
+.contact-inputs {
   width: 400px;
   height: 50px;
   border: none;
@@ -258,18 +265,21 @@ ul li a:hover {
   color: var(--text-light);
 }
 
-.contact-left textarea{
+.contact-left textarea {
   height: 140px;
   padding-top: 15px;
   border-radius: 20px;
 }
-.contact-inputs:focus{
+
+.contact-inputs:focus {
   border: 2px solid var(--primary-color);
 }
-.contact-inputs::placeholder{
+
+.contact-inputs::placeholder {
   color: var(--text-light);
 }
-.contact-left button{
+
+.contact-left button {
   display: flex;
   align-items: center;
   padding: 15px 30px;
@@ -279,25 +289,25 @@ ul li a:hover {
   border-radius: 50px;
   background-color: var(--primary-color);
   color: #ffffff;
-  cursor:pointer;
+  cursor: pointer;
   border: 2px solid var(--primary-color);
   transition: 0.3s;
 }
 
-.contact-left button:hover{
+.contact-left button:hover {
   background-color: var(--extra-light);
-  color:var(--primary-color);
+  color: var(--primary-color);
 }
 
-.contact-right .text-data{
+.contact-right .text-data {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #333;
 }
 
-.image2{
-  position:relative;
+.image2 {
+  position: relative;
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -305,7 +315,8 @@ ul li a:hover {
   padding: 3px;
   margin-bottom: 10px;
 }
-.image2 .profile-img{
+
+.image2 .profile-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -314,22 +325,24 @@ ul li a:hover {
 }
 
 
-.text-data .name{
+.text-data .name {
   font-size: 22px;
   font-weight: 500;
 }
-.text-data .job{
+
+.text-data .job {
   font-size: 15px;
   font-weight: 400;
 }
 
 
-.contact-right .media-buttons{
+.contact-right .media-buttons {
   display: flex;
   align-items: center;
   margin-top: 15px;
 }
-.contact-right .media-buttons .link{
+
+.contact-right .media-buttons .link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,7 +356,7 @@ ul li a:hover {
   text-decoration: none;
 }
 
-.contact-right::before{
+.contact-right::before {
   content: '';
   position: absolute;
   top: 0;
@@ -352,6 +365,20 @@ ul li a:hover {
   width: 100%;
   border-radius: 24px 24px 0 0;
   background-color: var(--primary-color);
+}
+
+.video-container ul {
+  /* background-color: red; */
+  display: inline;
+  flex-direction: column;
+
+}
+
+.feature {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 @media (width < 750px) {
@@ -371,7 +398,7 @@ ul li a:hover {
     gap: 3rem;
   }
 
-  nav #check:checked ~ ul {
+  nav #check:checked~ul {
     left: 0;
   }
 
@@ -391,32 +418,33 @@ ul li a:hover {
 
   .action__btns {
     margin: auto;
-  } 
-
-  .contact-content{
-  min-height: 100vh;
-  max-width: 100vw;
-  margin: auto;
-  padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  /* grid-template-columns: repeat(1, 1fr); */
-  gap: 1rem;
   }
 
-  .contact-right{
+  .contact-content {
+    min-height: 100vh;
+    max-width: 100vw;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(1, 1fr); */
+    gap: 1rem;
+  }
+
+  .contact-right {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 270px;
     width: 100%;
     background: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
     padding: 25px;
     position: relative;
   }
-  .contact-left{
+
+  .contact-left {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -424,13 +452,21 @@ ul li a:hover {
     max-width: 270px;
     width: 100%;
     background: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
     padding: 25px;
     position: relative;
   }
-  .contact-inputs{
- width: 100%;
- background: var(--extra-light-secondary);
-    }
+
+  .contact-inputs {
+    width: 100%;
+    background: var(--extra-light-secondary);
+  }
+
+
+
+  .feature {
+    /* font-size: 0.8rem; */
+    list-style-type: decimal;
+  }
 }
