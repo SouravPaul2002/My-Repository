@@ -48,7 +48,7 @@
           programming languages like c , java , python and java is my favourite.
         </p>
         <div class="action__btns">
-          <a href="SouravPaul_CV.pdf" download><button class="hire__me">Download CV</button></a>
+          <a href="SouravPaulCVLatex.pdf" download><button class="hire__me">Download CV</button></a>
           <a href="https://github.com/SouravPaul2002" target="_blank"><button class="portfolio">My Github</button></a>
         </div>
       </div>
@@ -59,64 +59,112 @@
   </section>
   <!-- home section ends here  -->
 
-
-  <!-- about section starts here  -->
-  <section id="about-section" class="section about-section">
-    <div class="section__container">
-      <div class="content">
-        <p class="subtitle">Language</p>
-        <div class="about-image">
-          <img src="lang.png" alt="profile" />
+  <section id="about-section" class="about-new">
+    <div class="about-section">
+      <div class="about-title">ABOUT <span>ME</span></div>
+      <div class="about-divider"></div>
+      <div class="about-intro">
+        <div class="about-photo">
+          <div class="thats-me">That's me →</div>
+          <img src="Roni2.png" alt="Profile Photo">
+        </div>
+        <div class="about-text">
+          Hi, I’m Sourav Paul from Naihati, West Bengal. I completed my Bachelors in Computer Applications from Techno
+          India Hooghly Campus and am currently pursuing my Masters in Computer Applications from the University of
+          Kalyani.<br><br>
+          I’m passionate about building web applications and exploring <strong>AI/ML</strong> technologies. I enjoy creating responsive,
+          user-friendly websites and working with a wide range of technologies including <strong>HTML, CSS, JavaScript, PHP,
+          React, Python, C, C++, FastAPI, MySQL, Git,</strong> and popular data science libraries like <strong>NumPy, Pandas, Matplotlib,
+          &amp; Scikit-learn.</strong> I also love solving problems on LeetCode to sharpen my programming and problem-solving skills.<br><br>
+          When I’m not coding, I love learning new technologies, exploring creative solutions, and challenging myself
+          with interesting projects.
         </div>
       </div>
-      <div class="content">
-        <p class="subtitle">Programming Language</p>
-        <div class="about-image">
-          <img src="proglang.png" alt="profile" />
+      <div class="columns">
+        <div class="column">
+          <div class="column-title">THINGS I LOVE</div>
+          <div class="things-i-love-icons">
+            <img src="music.jpg" alt="music">
+            <img src="cycling.webp" alt="cycling">
+            <img src="code.png" alt="code">
+          </div>
         </div>
-      </div>
-      <div class="content">
-        <p class="subtitle">Education</p>
-        <div class="about-image">
-          <img src="edu.png" alt="profile" />
-        </div>
-      </div>
-      <div class="content">
-        <p class="subtitle">Hobby</p>
-        <div class="about-image">
-          <img src="hobby.png" alt="profile" />
+        <div class="column">
+          <div class="column-title">LOOK WHAT I CAN DO</div>
+          <div class="list-container">
+            <div>
+              <ul>
+                <li>Python</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>HTML/CSS/Javascript/PHP/REACT</li>
+                <li>FASTAPI</li>
+                <li>MYSQL</li>
+                <li>GIT</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>MACHINE LEARNING</li>
+                <li>NUMPY</li>
+                <li>PANDAS</li>
+                <li>MATPLOTLIB</li>
+                <li>SCIKIT-LEARN</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- about section ends here  -->
-
-
   <!-- Projects section starts here  -->
+  <section id="project-section" class="section projects-section">
+    <h2 class="section-title">My Projects</h2>
+    <div class="section__container project-container">
+      <div class="projects-grid">
 
-  <section id="project-section" class="section project-section">
-    <div class="section__container">
-      <div class="content">
-        <div class="video-container">
-          <p class="subtitle" style="color: #a855f7;">MedCAre - An emergency medical support system</p>
-          <video width="320" height="240" controls controlsList="nodownload">
-            <source src="medCare_bbs_comm.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <ol class="feature" style="list-style-type: upper-roman;">
-            <li>Responsible for Hospital Bed booking module</li>
-            <li>Interactive user interface & hospital admin interface</li>
-            <li>Smooth E-mail communication</li>
-          </ol>
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <div class="video-wrapper">
+            <video controls controlsList="nodownload">
+              <source src="medCare_bbs_comm.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="project-info">
+            <h3>MedCare</h3>
+            <p>MedCare – An emergency medical support system featuring hospital bed booking with admin panel, ambulance and blood booking, plus medicine, equipment sales, and nurse services. Built with HTML, CSS, Bootstrap, JavaScript, PHP, and Laravel.</p>
+            <div class="project-links">
+              <a href="https://github.com/ShubhamDasgupta2003/Emergency_Medical_Support_System" target="_blank" class="project-btn">GitHub</a>
+              <!-- <a href="https://your-demo-link.com" target="_blank" class="project-btn secondary">Live Demo</a> -->
+            </div>
+          </div>
         </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <div class="video-wrapper">
+            <video controls controlsList="nodownload">
+              <source src="platera_preview.webm" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="project-info">
+            <div class="text-info">
+              <h3>Platera</h3>
+              <p>Platera – A restaurant discovery and table reservation platform with features like cuisine search, menu viewing, seat booking, booking history, and email confirmations. Built using React, Next.js, Tailwind CSS, Strapi, MySQL, and deployed on Vercel & Render with Nodemailer integration.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SouravPaul2002/restaurant-booking-app" class="project-btn">GitHub</a>
+              <a href="https://restaurant-booking-app-two.vercel.app/" class="project-btn secondary">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
-
   <!-- Projects section ends here  -->
-
-
 
   <!-- Contact section starts here  -->
 
